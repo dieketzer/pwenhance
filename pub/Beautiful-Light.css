@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.12
+version: 0.13
 tehbubbaloo (nrglg base)
 */
  /*
@@ -314,8 +314,10 @@ Blockquote.Quote {
 	box-shadow: 2px 2px 5px rgba(0,0,0,.2);
 }
 
-.MeBox.Inline .Username {
+.MeBox.Inline .Username,
+.MeBox.Inline .Username:hover {
     color: #FFF !important;
+    background: transparent;
 }
 
 .SiteMenu li a {
