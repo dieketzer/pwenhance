@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.151
+version: 0.152
 tehbubbaloo (nrglg base)
 */
  /*
@@ -231,6 +231,13 @@ Blockquote.Quote {
     margin: 5px;
 }
 
+/* spoiler fix */
+
+.SpoilerText > pre, .SpoilerText > code {
+  background-color: transparent;
+  border: none;
+}
+    
 /* flag/quote buttons */
 .Reactions {
   background-color: rgb(202, 202, 205);
