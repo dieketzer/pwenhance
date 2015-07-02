@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.15
+version: 0.14
 tehbubbaloo (nrglg base)
 */
  /*
@@ -152,7 +152,6 @@ body.Profile.EditMode #Content form
 /* postBit username*/
 .Item .Author a {
   color:rgb(16,70,109) !important;
-  font-size: 14px;
   font-weight: bold;
   background: transparent;
 }
