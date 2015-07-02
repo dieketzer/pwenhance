@@ -1,0 +1,519 @@
+/* 
+Beautiful Lite (blue)
+version: 0.10
+tehbubbaloo (nrglg base)
+*/
+ /*
+darkest blue: #021b2d
+dark border blue: #33739f
+medium blue: #10466d
+'black' text: #141414
+content bg: #cacacd
+blue border: #7398b2
+lightest blue: #bec5ca
+
+brown text: #5d3a0d
+orange bg: #cdc2b3
+orange border: #c78a3b
+orange hover: #c7a77e
+*/
+
+html { min-height:100%; height:auto; box-sizing:border-box; }
+
+body
+{
+    background: #ACACAC;
+    color: #141414;
+}
+
+
+/* Reset to prepare to overwriting */
+.DataList .Item,
+.Comment,
+.MessageList > Item.ItemDiscussion,
+.CommentsWrap > div.DataBox.DataBox-Comments > ul > li
+{
+    background:none;
+}
+a:link, a:visited {
+    color: rgb(16,70,109);
+    background: none;
+}
+
+a:hover {
+  color: #553103;
+  background-color: #cdc2b3; 
+}
+
+/* temp fix for coloured usertest */
+.Message span[style^=color] {
+	filter: hue-rotate(180deg) invert(100%);
+	-webkit-filter: hue-rotate(180deg) invert(100%);
+}
+.Message span[style^=color] img {
+	filter: hue-rotate(180deg) invert(100%) !important;
+	-webkit-filter: hue-rotate(180deg) invert(100%) !important;
+}
+
+/* pre pontent */
+.DataBox, .DataBox-Content {
+  background-color: rgb(202, 202, 205);
+  padding: 10px 20px;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -khtml-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
+/* pwenhanced user titles */
+.enhance-title {
+  background-color: #10466d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.MItem {
+  margin-left: 2px !important;
+  margin-right: 2px !important;
+}
+
+/* non hover links */
+a.Permalink,
+a.Permalink:hover,
+a.Permalink:visited {
+    color: rgb(16,70,109) !important;
+    background: transparent !important;
+}
+
+/* Changes general post color (is too dark otherwise) */
+.ItemDiscussion,
+.Comment,
+.Activities > .Activity,
+.MessageList > li,
+.Item-Search,
+.MessageList > li.Item,
+.Profile .DataListWrap ul.DataList li.Item,
+.DataListWrap ul.Conversations li.Item,
+ol.DataList-Search li.Item,
+ul.Drafts li.Item,
+body.Profile.EditMode #Content form
+{
+    overflow:hidden;
+    background-color:#cacacd;
+    border:1px solid #7398b2;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    border-radius:5px;
+
+}
+
+/* postbit */
+.Comment .CommentHeader {
+  background: rgb(165, 177, 202) !important;
+  border: 1px solid rgb(165, 177, 202) !important;
+  width: 130px !important;
+  float: left !important;
+  margin: 0px !important;
+  padding: 5px !important; 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px !important;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  -khtml-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  position: relative !important;
+}
+
+/* postBit avatar*/
+.AuthorWrap > .Author .ProfilePhotoMedium {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.Author > a.PhotoWrap.Online {
+  box-shadow: #460 0 -1px 7px 1px, inset #7D0 0 -1px 9px, #7D0 0 2px 12px;
+}
+
+.CommentHeader .AuthorWrap, .CommentHeader .AuthorWrap > .Author {
+    text-align: center;
+}
+
+/* postBit username*/
+.Item .Author a {
+  color:rgb(16,70,109) !important;
+  font-weight: bold;
+  background: transparent;
+}
+
+.PhotoWrap > .Username  a, Username:visited {
+  color:rgb(16,70,109) !important;
+  background: none !important;
+}
+
+.PhotoWrap > .Username, Username:hover {
+  color:rgb(16,70,109) !important;
+  background: none !important;  
+} 
+
+/* postBit date aka permalink*/
+.Permalink {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* postBit update*/
+.DateUpdated {
+   display:none !important;  
+}
+
+/* message */
+/* edited by */
+div.PostEdited {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+/* message links */
+.Message  a,
+.Message:visited {
+    color:rgb(16,70,109) !important;
+}
+
+.Message a:hover {
+  color: #553103 !important;
+  background-color: #cdc2b3 !important;  
+}    
+
+/* quotes */
+Blockquote.Quote {
+  background: #cdc2b3 !important;
+  color: #553103;
+  border-color: #c7a77e !important;
+  overflow: auto;
+  margin: 1em;
+  padding: 0ex 0px;
+  border: 2px solid #c7a77e !important; 
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px !important;
+}
+
+.QuoteAuthor {
+    background: #c7a77e;
+}
+
+/* quote links */
+.UserQuote a:link,
+.QuoteAuthor a:link,
+.UserQuote a:hover,
+.QuoteAuthor a:hover,
+.UserQuote a:visited,
+.QuoteAuthor a:visited {
+    color: #553103 !important;
+    background: transparent !important;
+}
+
+/* quote text */
+.QuoteText {
+    font-style: italic;
+    margin: 5px;
+}
+
+/* flag/quote buttons */
+.Reactions {
+  background-color: rgb(202, 202, 205);
+  padding: 5px;
+  margin: 5px auto;
+  border: 1px solid rgb(115, 152, 178);
+  padding: 5px !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+.Reactions,
+.Reactions a,
+.Reactions:hover,
+.Reactions:visited {
+    color: rgb(16,70,109) !important;
+    background-color: transparent !important;
+}
+
+.ReactSprite {
+    background-image: url('http://i.imgur.com/JQJRdIK.png') !important;
+}
+
+/* new post icons */
+.HasNew {
+  background: #d00;
+  color: #FFF;
+}
+/* Change form box color (index, activity, profile, post) */
+.CommentFormWrap
+{
+    background:none;
+    border:0;
+}
+
+.Section-ActivityList .FormWrapper,
+.FormWrapper
+{
+    box-sizing:border-box;
+    margin-bottom:10px;
+    background-color:#bec5ca;
+    border:1px solid #7398b2;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    border-radius:5px;
+}
+
+/* Add backgrounds to preferences 
+#Content > div.FormTitleWrapper > div.Preferences,
+#Content form[action="/profile/picture?"],
+#Content form[action="/profile/online?"],
+#Content form[action="/profile/quotes?"],
+#Content form[action="/profile/signature?"],
+#Content form[action="/profile/edit?"]
+{
+    background-color:rgba(51, 102, 204, 0.45) !important;
+    border-radius:5px;
+}
+*/
+/* User Overall Control Panel */
+#Head
+{
+    background:#10466d;
+}
+
+.Row > .Box
+{
+	background: #021b2d;
+	border: 1px solid #33739f;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    border-radius:5px;
+}
+
+.BoxTop
+{
+	box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+}
+
+.MeBox.Inline .Username {
+    color: #FFF !important;
+}
+
+.SiteMenu li a {
+    color: #FFF !important;    
+}
+/* User Profile */
+#Panel
+{
+    box-sizing:border-box;
+    padding:5px;
+    background-color: #bec5ca;
+	border: 1px solid #7398b2;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    border-radius:5px;
+}
+
+#Panel .ProfilePhotoLarge
+{
+    width:190px;
+    border-radius:5px 5px 0px 0px;
+}
+
+#Panel .Box
+{
+    background:none;
+    border:none;
+}
+
+.FilterMenu > li
+{
+    padding:0px !important;
+}
+
+.FilterMenu > li a, .FilterMenu > li a:link
+{
+    display:block;
+    padding:5px 0 5px 5px;
+    color: #33739f !important;
+}
+
+.FilterMenu > li a:hover
+{
+    background-color:#cacacd !important;
+    color:#10466d !important;
+}
+.Gloss, dl.About dt, .DataList .Meta, .DiscussionForm label {
+    color: #141414 !important;
+}
+dl.About dt {
+  background: url('http://i.imgur.com/kJ4InJH.png') 2px -139px no-repeat transparent;
+}
+
+/* Navigation Buttons (including page listings) */
+#Body .Button:not([value="Search"]), .NavButton, .Pager a, .Pager span,
+#Body .Button:not([value="Search"]):focus, .NavButton:focus, .Pager a:focus, .Pager a:active:focus,
+.NavButton.ProfileButtons.Button-EditProfile
+{
+	background: #cdc2b3 !important;
+    color: #5d3a0d !important;
+    border:1px solid #c78a3b;
+    box-shadow:0 2px 3px 0px #000;
+    border-radius:3px;
+}
+
+#Body .Button:not([value="Search"]):hover, .NavButton:hover, .Pager a:hover:not(.Highlight),
+.NavButton.ProfileButtons.Button-EditProfile:hover
+{
+	background: #c7a77e !important;
+    color: #5d3a0d !important;
+    border:1px solid #c78a3b;
+}
+
+#Body .Button:not([value="Search"]):active:hover, .NavButton:active:hover, .Pager a:active:not(.Highlight)
+{
+	background: #c7a77e !important;
+    color: #5d3a0d !important;
+    border:1px solid #c78a3b;
+}
+
+.Pager a.Highlight
+{
+	background: #bec5ca !important;
+    color: #021b2d !important;
+    border:1px solid #7398b2;
+}
+
+.CategoryTable > tbody > tr,
+.DiscussionsTable > tbody > tr
+{
+    background-color: #cacacd;
+}
+
+.CategoryTable > tbody > tr.Item.Read.ItemDiscussion,
+.DiscussionsTable > tbody > tr.Item.Read.ItemDiscussion
+{
+    background-color: #cacacd;
+}
+
+.CategoryTable > tbody > tr.Item.Unread.ItemDiscussion,
+.DiscussionsTable > tbody > tr.Item.Unread.ItemDiscussion
+{
+    background-color: #cacacd;
+}
+
+.CategoryTable > tbody > tr.Item.New.ItemDiscussion,
+.DiscussionsTable > tbody > tr.Item.New.ItemDiscussion
+{
+    background-color: #cacacd;
+}
+
+/* Hover */
+.CategoryTable > tbody > tr:hover,
+.DiscussionsTable > tbody > tr:hover td
+{
+    background: #cacacd !important;
+}
+
+.CategoryTable > tbody > tr.Item.Read.ItemDiscussion:hover,
+.DiscussionsTable > tbody > tr.Item.Read.ItemDiscussion:hover td
+{
+    background: #cacacd !important;
+}
+
+.CategoryTable > tbody > tr.Item.Unread.ItemDiscussion:hover,
+.DiscussionsTable > tbody > tr.Item.Unread.ItemDiscussion:hover td
+{
+    background: #cacacd !important;
+}
+
+.CategoryTable > tbody > tr.Item.New.ItemDiscussion:hover,
+.DiscussionsTable > tbody > tr.Item.New.ItemDiscussion:hover td
+{
+    background: #cacacd !important;
+}
+
+.Item.ItemDiscussion:hover td a:hover
+{
+    color: #10466d;
+}
+
+.CategoryGroup tr, .ContentColumn .CategoryGroup
+{
+    
+}
+
+.DataTable > thead > tr > td
+{
+    background: #c7a77e;
+    color:#5d3a0d;
+}
+
+.ChildCategories a
+{
+    
+}
+
+.ChildCategoryList .Item h3.CategoryName
+{
+    margin-top:1px;
+    border-bottom:1px solid transparent;
+    background: rgba(62, 62, 135, 0.7) !important;
+}
+
+.ChildCategoryList .Item h3.CategoryName a:hover
+{
+    text-shadow:0px 0px 3px #000;
+    color:#85C2FF;
+}
+
+.DataList.ChildCategoryList > li.Item
+{
+    background: linear-gradient(#9DCEFF, #122447);
+}
+
+#Body .SearchForm form[action="/search"]
+{
+    display:none;
+}
+
+/* Post internal borders */
+.Comment .Item-BodyWrap
+{
+    border-left:1px solid rgba(51, 153, 255, 0.35);
+}
+
+.Signature.UserSignature
+{
+  border-color: rgba(115, 152, 178,0.4);
+  font-size: 9pt;
+  color: rgb(100,100,100);
+  padding: 5px 0 0;
+  margin-top: 5px;
+  max-height: 150px;
+  overflow: hidden;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+  opacity: 0.6;
+}
