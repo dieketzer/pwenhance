@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.152
+version: 0.153
 tehbubbaloo (nrglg base)
 */
  /*
@@ -43,16 +43,6 @@ a:link, a:visited {
 a:hover {
   color: #553103;
   background-color: #cdc2b3; 
-}
-
-/* temp fix for coloured usertest */
-.Message span[style^=color] {
-	filter: hue-rotate(180deg) invert(100%);
-	-webkit-filter: hue-rotate(180deg) invert(100%);
-}
-.Message span[style^=color] img {
-	filter: hue-rotate(180deg) invert(100%) !important;
-	-webkit-filter: hue-rotate(180deg) invert(100%) !important;
 }
 
 /* pre pontent */
