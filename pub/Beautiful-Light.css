@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.11
+version: 0.12
 tehbubbaloo (nrglg base)
 */
  /*
@@ -320,6 +320,11 @@ Blockquote.Quote {
 
 .SiteMenu li a {
     color: #FFF !important;    
+}
+.SiteMenu li a:hover {
+  color: #FFF !important;
+  background: #10466d;
+  text-decoration:none
 }
 /* User Profile */
 #Panel
