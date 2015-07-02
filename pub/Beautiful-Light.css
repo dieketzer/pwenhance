@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.13
+version: 0.14
 tehbubbaloo (nrglg base)
 */
  /*
@@ -412,6 +412,11 @@ dl.About dt {
     border:1px solid #7398b2;
 }
 
+.BeforeCommentHeading {
+  margin: 3px;
+}
+
+/* tables */
 .CategoryTable > tbody > tr,
 .DiscussionsTable > tbody > tr
 {
