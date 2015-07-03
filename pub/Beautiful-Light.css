@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.153
+version: 0.154
 tehbubbaloo (nrglg base)
 */
  /*
@@ -201,7 +201,8 @@ Blockquote.Quote {
 }
 
 .QuoteAuthor {
-    background: #c7a77e;
+  background: #c7a77e;
+  padding-left: 2px;
 }
 
 /* quote links */
@@ -410,6 +411,11 @@ dl.About dt {
     border:1px solid #7398b2;
 }
 
+.Button .SpDropdownHandle {
+  border-color: #5d3a0d transparent transparent transparent !important;
+}
+
+/* pagination positioning */
 .BeforeCommentHeading {
   margin: 3px;
 }
@@ -514,6 +520,7 @@ dl.About dt {
     border-left:1px solid rgba(51, 153, 255, 0.35);
 }
 
+/*signature stuff */
 .Signature.UserSignature
 {
   border-color: rgba(115, 152, 178,0.4);
@@ -526,4 +533,25 @@ dl.About dt {
   overflow-y: hidden !important;
   overflow-x: hidden !important;
   opacity: 0.6;
+}
+.Signature.UserSignature img {
+  width: auto;
+  height: auto;
+  max-width: 550px !important;
+  max-height: 140px !important;
+}
+
+/* modals */
+.FlyoutMenu {
+  width: 300px;
+  background: #bec5ca;
+  color: #141414;
+  border: solid 1px #7398B2;
+  border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  -webkit-border-radius: 5px !important;
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  -khtml-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
 }
