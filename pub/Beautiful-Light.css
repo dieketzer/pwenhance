@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.154
+version: 0.155
 tehbubbaloo (nrglg base)
 */
  /*
@@ -370,6 +370,7 @@ Blockquote.Quote {
     background-color:#cacacd !important;
     color:#10466d !important;
 }
+
 .Gloss, dl.About dt, .DataList .Meta, .DiscussionForm label {
     color: #141414 !important;
 }
@@ -513,6 +514,10 @@ dl.About dt {
 {
     display:none;
 }
+/*bookmark star hover */
+a.Hijack.Bookmark:hover {
+    background: none;
+}
 
 /* Post internal borders */
 .Comment .Item-BodyWrap
@@ -544,7 +549,7 @@ dl.About dt {
 /* modals */
 .FlyoutMenu {
   width: 300px;
-  background: #bec5ca;
+  background: #BEC5CA;
   color: #141414;
   border: solid 1px #7398B2;
   border-radius: 5px !important;
@@ -554,4 +559,45 @@ dl.About dt {
   -moz-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
   -khtml-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
   box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+}
+
+.PopList.Popin li > div,
+.PopList .Item,
+.PopList .Center
+{
+    padding:0px !important;
+    font-size: small;
+}
+
+.PopList.Popin li > div a:link,
+.PopList .Center a {
+    display:block;
+    padding:5px 0 5px 5px;
+    color: #33739f !important;
+}
+
+.PopList.Popin li > div a:hover,
+.PopList .Item:hover,
+.PopList .Center a:hover {
+    background-color:#cacacd !important;
+    color:#10466d !important;
+}
+
+/* profile page */
+.PanelInfo > li
+{
+    padding:0px !important;
+}
+
+.PanelInfo > li a, .FilterMenu > li a:link
+{
+    display:block;
+    padding:5px 0 5px 5px;
+    color: #33739f !important;
+}
+
+.PanelInfo > li a:hover
+{
+    background-color:#cacacd !important;
+    color:#10466d !important;
 }
