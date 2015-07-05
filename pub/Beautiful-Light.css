@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.155
+version: 0.156
 tehbubbaloo (nrglg base)
 */
  /*
@@ -25,7 +25,6 @@ body
     background: #ACACAC;
     color: #141414;
 }
-
 
 /* Reset to prepare to overwriting */
 .DataList .Item,
@@ -54,6 +53,7 @@ a:hover {
   -khtml-border-radius: 5px !important;
   border-radius: 5px !important;
 }
+
 /* pwenhanced user titles */
 .enhance-title {
   background-color: #10466d;
@@ -78,6 +78,12 @@ a.Permalink:hover,
 a.Permalink:visited {
     color: rgb(16,70,109) !important;
     background: transparent !important;
+}
+
+/* giant image-handling */
+.Message img {
+  max-width: 600px;
+  max-height: 600px;
 }
 
 /* Changes general post color (is too dark otherwise) */
@@ -132,7 +138,9 @@ body.Profile.EditMode #Content form
 }
 
 .Author > a.PhotoWrap.Online {
-  box-shadow: #460 0 -1px 7px 1px, inset #7D0 0 -1px 9px, #7D0 0 2px 12px;
+  	-webkit-box-shadow: 0px 0px 0px 2px rgba(2,143,2,1);
+	-moz-box-shadow: 0px 0px 0px 2px rgba(2,143,2,1);
+	box-shadow: 0px 0px 0px 2px rgba(2,143,2,1);
 }
 
 .CommentHeader .AuthorWrap, .CommentHeader .AuthorWrap > .Author {
@@ -222,13 +230,38 @@ Blockquote.Quote {
     margin: 5px;
 }
 
-/* spoiler fix */
+/* spoiler */
 
-.SpoilerText > pre, .SpoilerText > code {
-  background-color: transparent;
+.UserSpoiler {
+  border: 2px solid #7398B2 !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px !important;
+  margin-right: 0px !important;
+}
+
+div.UserSpoiler div.SpoilerText {
+padding: 3px 0px;
+  padding: 3px;
+  margin: 3px 0px;
   border: none;
 }
-    
+
+/* code */
+code, pre {
+  background-color: rgb(245, 245, 245);
+    background: rgb(245, 245, 245);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 4px 8px;
+  border: 2px solid #7398B2;
+}
+code:hover, pre:hover {
+  box-shadow: none;
+}
+
 /* flag/quote buttons */
 .Reactions {
   background-color: rgb(202, 202, 205);
