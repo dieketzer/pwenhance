@@ -72,6 +72,10 @@ a:hover {
   margin-right: 2px !important;
 }
 
+.enhance-title.user {
+  color: #CACACD;
+}
+
 /* non hover links */
 a.Permalink,
 a.Permalink:hover,
