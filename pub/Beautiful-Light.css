@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.156
+version: 0.157
 tehbubbaloo (nrglg base)
 */
  /*
@@ -92,6 +92,7 @@ a.Permalink:visited {
 .Activities > .Activity,
 .MessageList > li,
 .Item-Search,
+.CasualMessage,
 .MessageList > li.Item,
 .Profile .DataListWrap ul.DataList li.Item,
 .DataListWrap ul.Conversations li.Item,
@@ -609,7 +610,8 @@ a.Hijack.Bookmark:hover {
     color: #33739f !important;
 }
 
-.PopList.Popin li > div a:hover,
+.PopList li > div a:hover,
+.PopList li > a:hover,
 .PopList .Item:hover,
 .PopList .Center a:hover {
     background-color:#cacacd !important;
