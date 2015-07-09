@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.157
+version: 0.158
 tehbubbaloo (nrglg base)
 */
  /*
@@ -54,6 +54,14 @@ a:hover {
   border-radius: 5px !important;
 }
 
+/* pwenhanced header */
+.picker a,
+.picker:hover,
+.picker:visited,
+.picker:active {
+    background: transparent;
+}
+    
 /* pwenhanced user titles */
 .enhance-title {
   background-color: #10466d;
@@ -416,6 +424,25 @@ dl.About dt {
   background: url('http://i.imgur.com/kJ4InJH.png') 2px -139px no-repeat transparent;
 }
 
+/* profile page */
+.PanelInfo > li
+{
+    padding:0px !important;
+}
+
+.PanelInfo > li a, .FilterMenu > li a:link
+{
+    display:block;
+    padding:5px 0 5px 5px;
+    color: #33739f !important;
+}
+
+.PanelInfo > li a:hover
+{
+    background-color:#cacacd !important;
+    color:#10466d !important;
+}
+
 /* Navigation Buttons (including page listings) */
 #Body .Button:not([value="Search"]), .NavButton, .Pager a, .Pager span,
 #Body .Button:not([value="Search"]):focus, .NavButton:focus, .Pager a:focus, .Pager a:active:focus,
@@ -622,21 +649,7 @@ a.Hijack.Bookmark:hover {
     color:#10466d !important;
 }
 
-/* profile page */
-.PanelInfo > li
-{
-    padding:0px !important;
-}
-
-.PanelInfo > li a, .FilterMenu > li a:link
-{
-    display:block;
-    padding:5px 0 5px 5px;
-    color: #33739f !important;
-}
-
-.PanelInfo > li a:hover
-{
-    background-color:#cacacd !important;
-    color:#10466d !important;
+/* Headings */
+h2.H {
+    color: #141414;
 }
