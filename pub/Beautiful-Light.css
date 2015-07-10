@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.16
+version: 0.161
 tehbubbaloo (nrglg base)
 */
  /*
@@ -90,6 +90,15 @@ a.Permalink:hover,
 a.Permalink:visited {
     color: rgb(16,70,109) !important;
     background: transparent !important;
+}
+
+/* kill user-generated text colours */
+.Message span[style^=color] {
+	color: #000 !important;
+}
+
+.Signature.UserSignature span[style^=color] {
+    color: #000 !important;
 }
 
 /* giant image-handling */
@@ -681,6 +690,10 @@ a.Hijack.Bookmark:hover {
 .PopList .Center a:hover {
     background-color:#cacacd !important;
     color:#10466d !important;
+}
+
+/* alerts */
+.InformMessages {
 }
 
 /* Headings */
