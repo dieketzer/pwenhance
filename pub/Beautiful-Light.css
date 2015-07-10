@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.159
+version: 0.16
 tehbubbaloo (nrglg base)
 */
  /*
@@ -112,7 +112,6 @@ ol.DataList-Search li.Item,
 ul.Drafts li.Item,
 body.Profile.EditMode #Content form
 {
-    overflow:hidden;
     background-color:#cacacd;
     border:1px solid #7398b2;
     -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
@@ -326,6 +325,11 @@ code:hover, pre:hover {
 
 .ReactSprite {
     background-image: url('http://i.imgur.com/JQJRdIK.png') !important;
+}
+
+/* fix block-user offset */
+.ReactReject {
+  background-position: -341px -5px;
 }
 
 /* new post icons */
