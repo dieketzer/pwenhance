@@ -308,6 +308,7 @@ code:hover, pre:hover {
   background-color: rgb(202, 202, 205);
   padding: 5px;
   margin: 5px auto;
+  clear: left;
   border: 1px solid rgb(115, 152, 178);
   padding: 5px !important;
   -webkit-border-radius: 5px;
