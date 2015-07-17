@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.164
+version: 0.165
 tehbubbaloo (nrglg base)
 */
  /*
@@ -224,6 +224,7 @@ body.Profile.EditMode #Content form
 /* edited by */
 div.PostEdited {
   color: rgba(255, 0, 0, 0.7);
+  display: block !important;
 }
 
 /* horizontal postbit */
@@ -340,7 +341,7 @@ code:hover, pre:hover {
 .Reactions:hover,
 .Reactions:visited {
     color: rgb(16,70,109) !important;
-    background-color: transparent !important;
+    background-color: #BEC5CA !important;
 }
 
 .ReactSprite {
@@ -717,21 +718,22 @@ h2.H {
 }
 
 /* tooltips */
-.tooltip-me-left, .tooltip-me-right {
-  position: absolute;
-  display: none;
-  max-height: 100px;
+.tooltip-comment {
+  max-height: 150px;
   overflow: hidden;
-  background: linear-gradient(to bottom,rgba(190, 197, 202, 1) 80%,rgba(16, 70, 109, 1) 98%) !important;
-  background: -webkit-linear-gradient(top,rgba(190, 197, 202, 1) 80%,rgba(16, 70, 109, 1) 98%);
-  background: -o-linear-gradient(top,rgba(190, 197, 202, 1) 80%,rgba(16, 70, 109, 1) 98%);
-  color: rgb(16, 70, 109) !important;
-  border: solid 1px #10466D;
+  background: #BEC5CA;
+  color: #141414;
+  border: solid 1px #7398B2;
   border-radius: 5px !important;
   -moz-border-radius: 5px !important;
   -webkit-border-radius: 5px !important;
-  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
-  -moz-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
-  -khtml-box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
-  box-shadow: 2px 2px 5px rgba(0,0,0, 0.2);
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0,0,0, 0.4);
+  -khtml-box-shadow: 2px 2px 5px rgba(0,0,0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0,0,0, 0.4);
+}   
+
+/* flayouts like report/preferences */
+.MenuItems {
+  background: #BEC5CA;
 }
