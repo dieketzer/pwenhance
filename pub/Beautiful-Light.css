@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.165
+version: 0.166
 tehbubbaloo (nrglg base)
 */
  /*
@@ -132,8 +132,10 @@ body.Profile.EditMode #Content form
 }
 
 /* warning announce */
-.WarningMessage {
+.WarningMessage,
+.AlertMessage {
   background: #ffebe9;
+      color: #FF0E00;
   border: 1px solid #FF0E00;  
   -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
   -moz-box-shadow: 2px 2px 5px rgba(0,0,0,.2);
@@ -145,7 +147,11 @@ body.Profile.EditMode #Content form
 .WarningMessage a,
 .WarningMessage:hover,
 .WarningMessage:visited,
-.WarningMessage:active {
+.WarningMessage:active,
+.AlertMessage a,
+.AlertMessage:hover,
+.AlertMessage:visited,
+.AlertMessage:active{
   background: #ffebe9;
   color: #FF0E00;
   text-decoration: underline;
