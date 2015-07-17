@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.166
+version: 0.167
 tehbubbaloo (nrglg base)
 */
  /*
@@ -155,7 +155,6 @@ body.Profile.EditMode #Content form
   background: #ffebe9;
   color: #FF0E00;
   text-decoration: underline;
-
 }
 
 .DismissMessage a.Dismiss,
@@ -164,6 +163,11 @@ body.Profile.EditMode #Content form
 .DismissMessage .Dismiss:active {
   color: #FF0E00 !important;
   background: transparent !important;
+}
+
+#Content > div.DismissMessage.CasualMessage > div > a:hover {
+    background: none !important;
+    text-decoration: underline;
 }
 
 /* postbit */
