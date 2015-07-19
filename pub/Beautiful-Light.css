@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 0.168
+version: 0.169
 tehbubbaloo (nrglg base)
 */
  /*
@@ -768,4 +768,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bec5ca', end
 /* flayouts like report/preferences */
 .MenuItems {
   background: #BEC5CA;
+}
+
+/* search result highlights */
+mark {
+  background: rgba(255, 232, 0, 0.5) !important;
+}
+/* breadcrumb */
+#Frame > div:nth-child(2) {
+  background-color: rgb(135, 145, 166);
+}
+
+.Separator {
+  background: #33739F;
 }
