@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.01c
+version: 1.01d
 tehbubbaloo (nrglg base)
 */
 /*
@@ -207,6 +207,7 @@ body.Profile.EditMode #Content form {
     height: auto;
     max-width: 100px;
     max-height: 100px;
+    margin: 4px 4px 4px 4px;
 }
 .CommentHeader .AuthorWrap,
 .CommentHeader .AuthorWrap > .Author {
@@ -789,4 +790,22 @@ span.Tag.QnA-Box.QnA-Accepted,
     -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     border-radius: 5px;
+}
+
+ /* forumlist catagories */
+.ChildCategoryList .Item h3.CategoryName {
+  margin-top: 0px !important;
+  border-bottom: 1px solid rgb(51, 115, 159) !important;
+  background: rgba(199, 167, 126, 1) !important;
+}
+
+.DataList.ChildCategoryList > li.Item {
+  background: rgb(165, 177, 202) !important;
+}
+
+.ChildCategoryList .Item h3.CategoryName a:hover {
+  text-shadow: none !important;
+  color: rgb(16, 70, 109) !important;
+  text-decoration: none !important;
+  background: none !important;
 }
