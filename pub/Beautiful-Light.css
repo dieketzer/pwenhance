@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.01d
+version: 1.01e
 tehbubbaloo (nrglg base)
 */
 /*
@@ -108,6 +108,7 @@ a.Permalink:visited {
   font-size: 14px !important;
   margin-top: 15px !important;
 }
+
 .Signature.UserSignature span[style^=color] {
     color: #000 !important;
 }
@@ -243,7 +244,7 @@ Username:hover {
     display: none !important;
 }
 /* message text */
-div.message {
+div.Item-BodyWrap > div > div.Message {
   line-height: normal !important;
   font-size: 14px !important;
   margin-top: 15px !important;
@@ -584,6 +585,15 @@ dl.About dt {
 .DiscussionsTable > tbody > tr.Item.New.ItemDiscussion {
     background-color: rgb(202, 202, 205);
 }
+
+.DataTableWrap {
+  border: 1px solid rgb(51, 115, 159);
+}
+
+#Content > div.DataTableWrap > table > tbody {
+    line-height: normal !important;
+}
+
 /* Hover */
 
 .CategoryTable > tbody > tr:hover,
@@ -758,6 +768,11 @@ mark {
     background: rgb(51, 115, 159);
 }
 /* tags */
+
+.Tag {
+    line-height: 18px !important;
+    padding: 2px 4px !important;
+}
 
 span.Tag.QnA-Box.QnA-Accepted,
 .QnA-Tag-Answered,
