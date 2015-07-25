@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.0
+version: 1.01
 tehbubbaloo (nrglg base)
 */
 /*
@@ -29,6 +29,7 @@ html {
 body {
     background: rgb(172, 172, 172);
     color: rgb(20, 20, 20);
+    font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif;
 }
 /* Reset to prepare to overwriting */
 
@@ -42,11 +43,14 @@ a:link,
 a:visited {
     color: rgb(16, 70, 109);
     background: none;
+    text-decoration: none !important;
 }
 a:hover {
     color: rgb(93, 49, 3);
     background-color: rgb(205, 194, 179);
+        text-decoration: none !important;
 }
+
 /* pre pontent */
 
 .DataBox,
@@ -93,15 +97,26 @@ a.Permalink:hover,
 a.Permalink:visited {
     color: rgb(16, 70, 109) !important;
     background: transparent !important;
+    text-decoration: none !important;
 }
+
 /* kill user-generated text colours */
 
 .Message span[style^=color] {
     color: #000 !important;
+  line-height: normal !important;
+  font-size: 14px !important;
+  margin-top: 15px !important;
 }
 .Signature.UserSignature span[style^=color] {
     color: #000 !important;
 }
+
+/* misc post-trendy cleanup */
+.HomepageTitle {
+  color: rgb(20, 20, 20);
+}
+
 /* giant image-handling */
 
 .Message img {
@@ -226,7 +241,13 @@ Username:hover {
 .DateUpdated {
     display: none !important;
 }
-/* message */
+/* message text */
+.message {
+  line-height: normal !important;
+  font-size: 14px !important;
+  margin-top: 15px !important;
+}
+
 /* edited by */
 
 div.PostEdited {
@@ -247,17 +268,30 @@ div.PostEdited {
     -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+.DiscussionHeader .DiscussionMeta {
+  margin-bottom: 20px;
+  border-bottom: 0px;
+  padding-bottom: 30px !important;
+}
+
+.ItemDiscussion .Meta, .DataList .Meta {
+  font-size: 11px;
+  color: rgb(20, 20, 20);
+}
+
 /* message links */
 
 .Message a,
 .Message:visited {
     color: rgb(16, 70, 109) !important;
-    text-decoration: underline;
+    background-color: rgba(165, 177, 202, 0.5) !important;
+    text-decoration: underline !important;
 }
 .Message a:hover {
     color: rgb(93, 49, 3) !important;
     background-color: rgb(205, 194, 179) !important;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 /* quotes */
 
@@ -297,8 +331,9 @@ Blockquote.Quote {
 }
 /* spoiler */
 
-.UserSpoiler {
+div.UserSpoiler {
     border: 2px solid rgb(115, 152, 178) !important;
+    background-color: rgba(0, 153, 255, .2);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -khtml-border-radius: 5px;
@@ -311,6 +346,10 @@ div.UserSpoiler div.SpoilerText {
     margin: 3px 0px;
     border: none;
 }
+.UserSpoiler:hover {
+  box-shadow:none !important;
+}
+
 /* code */
 
 code,
@@ -356,6 +395,11 @@ pre:hover {
 .ReactReject {
     background-position: -341px -5px;
 }
+
+.ReactButton, .ReactButton-Flag {
+    line-height: 18px !important;
+}
+
 /* Change form box color (index, activity, profile, post) */
 
 .CommentFormWrap {
@@ -407,6 +451,7 @@ pre:hover {
 .MeBox.Inline .Username:hover {
     color: #FFF !important;
     background: transparent;
+    text-decoration: none;
 }
 .SiteMenu li a {
     color: #FFF !important;
