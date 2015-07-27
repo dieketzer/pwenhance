@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.02b
+version: 1.02c
 tehbubbaloo (nrglg base)
 */
 /*
@@ -91,6 +91,11 @@ a:hover {
 .enhance-title.user {
     color: rgb(202, 202, 205);
 }
+
+div.Item-Header.DiscussionHeader > div.AuthorWrap > span.AuthorInfo > span.Rank.enhance-title {
+    padding-left: 10px;
+}
+
 /* non hover links */
 
 a.Permalink,
