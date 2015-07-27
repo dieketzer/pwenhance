@@ -1,10 +1,10 @@
 /* 
 Beautiful Lite (blue)
-version: 1.01e
+version: 1.02
 tehbubbaloo (nrglg base)
 */
 /*
-page background: rgb(172, 172, 172)
+page background: rgb(165, 168, 173)
 
 header blue: rgb(135, 145, 166)
 darkest blue: rgb(2, 27, 45)
@@ -27,7 +27,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    background: rgb(172, 172, 172);
+    background: rgb(165, 168, 173);
     color: rgb(20, 20, 20);
     font-family: 'Trebuchet MS',Helvetica,Arial,sans-serif;
 }
@@ -74,11 +74,12 @@ a:hover {
 
 .enhance-title {
     background-color: rgb(16, 70, 109);
+    overflow: hidden;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px;
-    padding: 2px;
+    padding: 1px;
     display: block;
     font-weight: bold;
     margin: 2px;
@@ -274,7 +275,7 @@ div.PostEdited {
 .DiscussionHeader .DiscussionMeta {
   margin-bottom: 20px;
   border-bottom: 0px;
-  padding-bottom: 30px !important;
+  padding-bottom: 38px !important;
 }
 
 .ItemDiscussion .Meta, .DataList .Meta {
