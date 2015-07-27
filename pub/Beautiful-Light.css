@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.02c
+version: 1.02d
 tehbubbaloo (nrglg base)
 */
 /*
@@ -94,6 +94,10 @@ a:hover {
 
 div.Item-Header.DiscussionHeader > div.AuthorWrap > span.AuthorInfo > span.Rank.enhance-title {
     padding-left: 10px;
+}
+
+div.Item-Header.DiscussionHeader > div.Meta.DiscussionMeta > span.MItem.Category {
+    display: inline-block;
 }
 
 /* non hover links */
@@ -212,8 +216,8 @@ body.Profile.EditMode #Content form {
 .AuthorWrap > .Author .ProfilePhotoMedium {
     width: auto;
     height: auto;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 75px;
+    max-height: 75px;
     margin: 4px 4px 4px 4px;
 }
 .CommentHeader .AuthorWrap,
@@ -266,6 +270,7 @@ div.PostEdited {
 
 .DiscussionHeader {
     background-color: rgb(165, 177, 202);
+    max-height: 100px;
     margin: 5px 0px 10px 0px !important;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
