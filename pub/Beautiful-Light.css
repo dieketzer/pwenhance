@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.02d
+version: 1.02e
 tehbubbaloo (nrglg base)
 */
 /*
@@ -214,10 +214,10 @@ body.Profile.EditMode #Content form {
 /* postBit avatar*/
 
 .AuthorWrap > .Author .ProfilePhotoMedium {
-    width: auto;
-    height: auto;
-    max-width: 75px;
-    max-height: 75px;
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     margin: 4px 4px 4px 4px;
 }
 .CommentHeader .AuthorWrap,
@@ -270,7 +270,8 @@ div.PostEdited {
 
 .DiscussionHeader {
     background-color: rgb(165, 177, 202);
-    max-height: 100px;
+    height: 108px;
+    max-height: 108px;
     margin: 5px 0px 10px 0px !important;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -285,7 +286,7 @@ div.PostEdited {
 .DiscussionHeader .DiscussionMeta {
   margin-bottom: 20px;
   border-bottom: 0px;
-  padding-bottom: 38px !important;
+  padding-bottom: 0px !important;
 }
 
 .ItemDiscussion .Meta, .DataList .Meta {
