@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.04b
+version: 1.04c
 tehbubbaloo (nrglg base)
 */
 /*
@@ -865,9 +865,9 @@ span.Tag.QnA-Box.QnA-Accepted,
 /* server status addon */
 
 .Game_Pop {
-    background: rgba(2, 27, 45, 0.9);
+    background: rgba(2, 27, 45, 0.9) !important;
     color:#FFF;
-    border: 1px solid #33739F;
+    border: 1px solid #33739F !important;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
