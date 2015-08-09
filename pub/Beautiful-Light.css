@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.04
+version: 1.04b
 tehbubbaloo (nrglg base)
 */
 /*
@@ -867,6 +867,12 @@ span.Tag.QnA-Box.QnA-Accepted,
 .Game_Pop {
     background: rgba(2, 27, 45, 0.9);
     color:#FFF;
+    border: 1px solid #33739F;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
 }
 
 .Game_Status_Block{
@@ -879,4 +885,5 @@ span.Tag.QnA-Box.QnA-Accepted,
     -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     border-radius: 5px;
+    cursor: default;
 }
