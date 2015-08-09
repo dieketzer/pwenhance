@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.03
+version: 1.04
 tehbubbaloo (nrglg base)
 */
 /*
@@ -351,12 +351,18 @@ Blockquote.Quote {
 
 div.UserSpoiler {
     border: 2px solid rgb(115, 152, 178) !important;
-    background-color: rgba(0, 153, 255, .2) !important;
+    background-color: rgb(190, 197, 202) !important;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -khtml-border-radius: 5px;
     border-radius: 5px !important;
     margin-right: 0px !important;
+}
+
+div.UserSpoiler div.SpoilerTitle input {
+    background: #CDC2B3;
+    border: 1px solid #C78A3B;
+    color: #5D3103;
 }
 div.UserSpoiler div.SpoilerText {
     padding: 3px 0px;
@@ -854,4 +860,23 @@ span.Tag.QnA-Box.QnA-Accepted,
   color: rgb(16, 70, 109) !important;
   text-decoration: none !important;
   background: none !important;
+}
+
+/* server status addon */
+
+.Game_Pop {
+    background: rgba(2, 27, 45, 0.9);
+    color:#FFF;
+}
+
+.Game_Status_Block{
+    background: rgb(135, 145, 166);
+    color: rgb(20, 20, 20);
+    border: 1px solid rgb(51, 115, 159);
+    padding: 0px 2px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    border-radius: 5px;
 }
