@@ -878,7 +878,7 @@ span.Tag.QnA-Box.QnA-Accepted,
 .Game_Status_Block{
     background: rgb(135, 145, 166);
     color: rgb(20, 20, 20);
-    border: 1px solid rgb(51, 115, 159);
+    border: 1px solid rgb(51, 115, 159) !important;
     padding: 0px 2px;
     -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
