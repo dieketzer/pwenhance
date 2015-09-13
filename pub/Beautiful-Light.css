@@ -1,6 +1,6 @@
 /* 
 Beautiful Lite (blue)
-version: 1.05d
+version: 1.06
 tehbubbaloo (nrglg base)
 */
 /*
@@ -214,6 +214,20 @@ body.Profile.EditMode #Content form {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     position: relative !important;
 }
+
+span.MItem.RoleTitle{
+    display: none;
+}
+
+.Rank-Mod .Rank:before, .Rank-Admin .Rank:before {
+    content: '';
+    background: none;
+    width: 0px;
+    height: 0px;
+    display: none;
+    padding-right: 0px;
+}
+
 /* postBit avatar*/
 
 .AuthorWrap > .Author .ProfilePhotoMedium {
@@ -296,6 +310,10 @@ div.PostEdited {
 .ItemDiscussion .Meta, .DataList .Meta {
   font-size: 11px;
   color: rgb(20, 20, 20);
+}
+
+.ItemDiscussion .Item-Header {
+    border-bottom: 1px solid rgba(75, 75, 75, 0);
 }
 
 /* message links */
@@ -876,45 +894,45 @@ span.Tag.QnA-Box.QnA-Accepted,
 }
 
 .Game_Status_Block{
-    background: rgb(135, 145, 166) !important;
-    color: rgb(20, 20, 20) !important;
+    background: rgb(135, 145, 166);
+    color: rgb(20, 20, 20);
     border: 1px solid rgb(51, 115, 159) !important;
     padding: 0px 2px;
-    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2) !important;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     -khtml-box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     border-radius: 5px;
-    cursor: default !important;
+    cursor: default;
 }
 
 div.Game_Block:not(#Opt_block):hover {
-    background: rgb(2, 27, 45) !important;
-    color: rgb(135, 145, 166) !important;
+    background: rgb(2, 27, 45);
+    color: rgb(135, 145, 166);
     border-left: 0px;
     border-right: 0px;
 }
 
 #Game_Select_Button {
-    color: #CACACD !important;
+    color: #CACACD;
 }
 
 /* game panel support */
 #gppop {
-    background: rgba(2, 27, 45, 0.9) !important;
+    background: rgba(2, 27, 45, 0.9);
 }
 
 .gpgameitem:hover {
-    background-color: rgb(135, 145, 166) !important;
-    border-color: rgb(51, 115, 159) !important;
+    background-color: rgb(135, 145, 166);
+    border-color: rgb(51, 115, 159);
 }
 
 #gpoptbutton {
-    background-color: rgb(205, 194, 179) !important;
-    color: rgb(93, 49, 3) !important;
+    background-color: rgb(205, 194, 179);
+    color: rgb(93, 49, 3);
 }
 
 #gpoptbutton:hover {
-    background-color: rgb(199, 167, 126) !important;
-    color: rgb(93, 49, 3) !important;
+    background-color: rgb(199, 167, 126);
+    color: rgb(93, 49, 3);
 }
